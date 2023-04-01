@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container">
+    <h1>My Budget App</h1>
+	<form>
+        <label for="income">Income:</label>
+		<input type="number" id="income" name="income" placeholder="Enter Total Amount"><br>
+
+		<label for="expenses">Expenses:</label>
+		<input type="number" id="expenses" name="expenses" placeholder="Enter Cost of Product"><br>
+        <input type="text" id="productName" name="productName" placeholder="Enter Title of Product"><br>
+
+		<button type="button" onclick="calculateBudget()">Calculate</button>
+		<button type="button" onclick="reset()">Reset</button>
+	</form>
+
+	<div id="budgetDisplay"></div>
+</section>
+	<script src="script.js"></script> 
+</body>
+</html>
